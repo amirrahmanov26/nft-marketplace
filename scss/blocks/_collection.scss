@@ -1,0 +1,70 @@
+.collection {
+    min-height: 836px;
+    width: 100%;
+    .container {
+        max-width: 1050px;
+    }
+    .collection_items {
+        min-height: 836px;
+        width: 100%;
+        padding-top: 80px;
+        .collection_title {
+            @include title-style;
+        }
+        .collection_subtitle {
+            @include subtitle-style;
+        }
+        .collection_content {
+            min-height: 525px;
+            width: 100%;
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            .collection_item {
+                width: 330px;
+                .item_img {
+                    transition: 0.3s all;
+                    border-radius: 20px;
+                    @include up-animation;
+                }
+                .item_small_icons {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 15px;
+                    img {
+                        transition: 0.3s all;
+                        border-radius: 20px;
+                        @include up-animation;
+                    }
+                    button {
+                        @include fill-btn-style;
+                        padding: 32px 15px;
+                        font-family: 'Space Mono', monospace;
+                        color: rgb(255, 255, 255);
+                        font-size: 22px;
+                        font-weight: 700;
+                        text-align: center;
+                        text-transform: capitalize;
+                    }
+                }
+                .item_title {
+                    margin-top: 15px;
+                    color: rgb(255, 255, 255);
+                    font-size: 22px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                }
+                .item_user {
+                    display: flex;
+                    align-items: center;
+                    .user_name {
+                        margin-left: 12px;
+                        color: rgb(255, 255, 255);
+                    }
+                }
+            }
+        }
+    }
+}

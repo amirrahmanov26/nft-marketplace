@@ -1,0 +1,99 @@
+.mashroom {
+    min-height: 640px;
+    width: 100%;
+    background: linear-gradient(
+            180deg,
+            rgba(162, 89, 255, 0),
+            rgb(162, 89, 255) 100%
+        ),
+        url('../../img/mashroom_bg.png') center center/cover no-repeat;
+    .container {
+        max-width: 1050px;
+    }
+    .mashroom_items {
+        min-height: 640px;
+        width: 100%;
+        padding-top: 360px;
+        .mashroom_content {
+            min-height: 220px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            .mashroom_main {
+                height: 100%;
+                width: 100%;
+                .mashroom_author {
+                    width: 151px;
+                    display: flex;
+                    align-items: center;
+                    padding: 10px 20px;
+                    border-radius: 20px;
+                    background-color: #3b3b3b;
+                    .author_name {
+                        color: #fff;
+                        margin-left: 12px;
+                    }
+                }
+                .mashroom_text {
+                    margin-top: 30px;
+                    .mashroom_title {
+                        @include title-style;
+                    }
+                    .mashroom_btn {
+                        @include empty-btn-style;
+                        background-color: #fff;
+                        border-color: #fff;
+                        color: #000;
+                        &:hover {
+                            background: none;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .mashroom_time {
+                width: 295px;
+                height: 144px;
+                border-radius: 20px;
+                backdrop-filter: blur(10px);
+                background: rgba(59, 59, 59, 0.5);
+                padding: 30px;
+                .time_title {
+                    color: rgb(255, 255, 255);
+                    font-size: 12px;
+                    text-align: left;
+                }
+                .time_main {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .time_item {
+                        .time_num {
+                            color: rgb(255, 255, 255);
+                            font-family: 'Space Mono', sans-serif;
+                            font-size: 38px;
+                            font-weight: 700;
+                            line-height: 120%;
+                        }
+                        .time_name {
+                            color: rgb(255, 255, 255);
+                            font-family: 'Space Mono', sans-serif;
+                            font-size: 12px;
+                            font-weight: 400;
+                        }
+                    }
+                    .double-dot {
+                        font-weight: 700;
+                        font-size: 28px;
+                        color: #fff;
+                    }
+                }
+            }
+            .mashroom_btn-small {
+                display: none;
+            }
+        }
+    }
+}

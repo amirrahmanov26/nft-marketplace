@@ -1,0 +1,96 @@
+.discover {
+    min-height: 780px;
+    width: 100%;
+    .container {
+        max-width: 1050px;
+    }
+    .discover_items {
+        min-height: 780px;
+        width: 100%;
+        padding-top: 80px;
+        .discover_header {
+            height: 91px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            .discover_titles {
+                height: 100%;
+                .discover_title {
+                    @include title-style;
+                }
+                .discover_subtitle {
+                    @include subtitle-style;
+                }
+            }
+            .discover_btn {
+                @include empty-btn-style;
+            }
+        }
+        .discover_content {
+            min-height: 470px;
+            width: 100%;
+            margin-top: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .discover_item {
+                width: 330px;
+                height: 469px;
+                border-radius: 20px;
+                @include up-animation;
+                .item_img {
+                    width: 100%;
+                }
+                .item_text {
+                    background-color: #3b3b3b;
+                    height: 173px;
+                    width: 100%;
+                    border-radius: 0 0 20px 20px;
+                    padding: 20px 30px;
+                    .item_title {
+                        color: rgb(255, 255, 255);
+                        font-size: 22px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+                    .item_user {
+                        display: flex;
+                        margin-top: 5px;
+                        .user_name {
+                            color: rgb(255, 255, 255);
+                            margin-left: 12px;
+                        }
+                    }
+                    .item_info {
+                        height: 43px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-top: 27px;
+                        .item_price {
+                            .price_title {
+                                color: rgb(133, 133, 132);
+                                font-size: 12px;
+                            }
+                            .price_num {
+                                color: rgb(255, 255, 255);
+                                font-family: 'Space Mono', sans-serif;
+                            }
+                        }
+                        .item_value {
+                            .value_title {
+                                color: rgb(133, 133, 132);
+                                font-size: 12px;
+                            }
+                            .value_num {
+                                color: rgb(255, 255, 255);
+                                font-family: 'Space Mono', sans-serif;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

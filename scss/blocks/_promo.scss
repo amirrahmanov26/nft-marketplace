@@ -1,0 +1,96 @@
+.promo {
+    min-height: 704px;
+    width: 100%;
+    .promo_items {
+        min-height: 704px;
+        width: 100%;
+        padding-top: 80px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        .promo_info {
+            min-height: 544px;
+            width: 510px;
+            .promo_title {
+                color: rgb(255, 255, 255);
+                font-size: 67px;
+                font-weight: 600;
+                line-height: 110%;
+                text-transform: capitalize;
+            }
+            .promo_descr {
+                margin-top: 20px;
+                color: rgb(255, 255, 255);
+                font-size: 22px;
+                font-weight: 400;
+                text-transform: capitalize;
+            }
+            .promo_btn {
+                @include fill-btn-style;
+                padding: 19px 50px;
+                margin-top: 20px;
+            }
+            .promo_static {
+                height: 77px;
+                width: 100%;
+                margin-top: 30px;
+                display: flex;
+                .static_item {
+                    width: 150px;
+                    height: 100%;
+                    color: #fff;
+                    .static_num {
+                        font-family: 'Space Mono', monospace;
+                        font-size: 28px;
+                        font-weight: 700;
+                        text-transform: capitalize;
+                    }
+                    .static_text {
+                        color: rgb(255, 255, 255);
+                        font-size: 23.99px;
+                        text-transform: capitalize;
+                    }
+                }
+                // justify-content: space-between;
+            }
+        }
+        .promo_card {
+            height: 510px;
+            width: 510px;
+            border-radius: 20px;
+            transition: 0.3s all;
+            @include up-animation;
+            .card_img {
+                display: block;
+                width: 100%;
+                border-radius: 20px 20px 0 0;
+            }
+            .card_text {
+                height: 109px;
+                width: 100%;
+                padding: 20px;
+                background-color: #3b3b3b;
+                border-radius: 0 0 20px 20px;
+                .card_title {
+                    /* H5 - Work Sans */
+                    color: rgb(255, 255, 255);
+                    font-size: 22px;
+                    font-weight: 600;
+                    text-transform: capitalize;
+                }
+                .card_user {
+                    margin-top: 10px;
+                    display: flex;
+                    align-items: center;
+                    .user_name {
+                        color: rgb(255, 255, 255);
+                        margin-left: 12px;
+                    }
+                }
+            }
+        }
+        .promo_small_side {
+            display: none;
+        }
+    }
+}

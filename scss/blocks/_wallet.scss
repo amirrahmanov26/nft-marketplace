@@ -1,0 +1,51 @@
+.wallet {
+    min-height: 737px;
+    width: 100%;
+    .container {
+        max-width: 1050px;
+    }
+    .wallet_items {
+        min-height: 737px;
+        width: 100%;
+        padding-top: 80px;
+        .wallet_title {
+            @include title-style;
+        }
+        .wallet_subtitle {
+            @include subtitle-style;
+        }
+        .wallet_content {
+            min-height: 438px;
+            width: 100%;
+            margin-top: 48px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .wallet_item {
+                height: 438px;
+                width: 330px;
+                border-radius: 20px;
+                background-color: #3b3b3b;
+                padding: 0 30px 30px 30px;
+                text-align: center;
+                .item_text {
+                    height: 128px;
+                    width: 100%;
+                    margin-top: 20px;
+                    text-align: center;
+                    .item_title {
+                        color: rgb(255, 255, 255);
+                        font-size: 22px;
+                        font-weight: 600;
+                        text-transform: capitalize;
+                    }
+                    .item_descr {
+                        color: rgb(255, 255, 255);
+                        text-align: center;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
